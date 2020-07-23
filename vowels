@@ -1,10 +1,4 @@
-def disemvowel(string):
-    vowels = "aeiou"
-    #here the strings are converted in to list and checked each element which is not in vowels
-    final = [each for each in word if each not in vowels]
-    final2 = ""
-    #here the each element in list is join in a empty variable
-    return final2.join(final)
-word = "daeopr kup plungsg etriebe"
 
-print(disemvowel(word))
+def disemvowel(string):
+    z = "'" +("".join(str(int(i)**2) for i in str(string))) + "'"
+    return z
