@@ -1,0 +1,11 @@
+def missing_elements(L):
+    start, end = L[0], L[-1]
+
+    return sorted(set(range(start, end + 1)).difference(L)) #creted a list and sorted with misssing number
+
+def find_missing_letter(chars):
+    numbers = list(map(ord, chars)) #converted character in to a number by using "ord" function
+    n = missing_elements(numbers) 
+    p = list(chr(n[0]))  #converted sorted set of number in to character using "chr" function
+    return p
+print(find_missing_letter(['a','b','d','e']))
